@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bot Settings</title>
+  <style>
+    /* views/bot-settings.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }  
+  </style>
+</head>
+<body>
+  <h1>Bot Settings</h1>
+  <form action="/bot-settings" method="POST">
+    <label for="apiKey">Bot API Key:</label>
+    <input type="text" id="apiKey" name="apiKey" placeholder="Enter API Key" required>
+    <br><br>
+    <button type="submit">Update Settings</button>
+  </form>
+</body>
+</html>
